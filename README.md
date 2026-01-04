@@ -24,11 +24,16 @@
 
 ## ✨ Features
 
-- 🔍 **Fast Word Search** - Instantly search for Nepali words
-- 📖 **Comprehensive Definitions** - Get detailed meanings, grammar info, and etymology
-- 🎨 **Beautiful UI** - Clean and intuitive interface with native Nepali font support
-- ⚡ **Lightweight** - Fast startup and minimal resource usage
-- 🖥️ **Standalone App** - No installation required, just download and run
+- 🔍 **Fast Word Search** - Instantly search for Nepali words with real-time results
+- 📖 **Comprehensive Definitions** - Get detailed meanings, grammar info, and etymology for each word
+- 🎨 **Beautiful Native UI** - Clean and intuitive interface with native Nepali font (Nirmala UI) support
+- 📚 **Rich Dictionary Database** - Extensive collection of Nepali words with multiple definitions
+- ⌨️ **Keyboard Shortcuts** - Press Enter to search instantly
+- 🔤 **Grammar Information** - View grammatical details (व्याकरण) for each word
+- 📜 **Etymology Support** - Learn the origin (उत्पत्ति) of words
+- 📝 **Multiple Meanings** - See all senses (अर्थहरू) of a word in one place
+- ⚡ **Lightweight & Fast** - Quick startup and minimal resource usage
+- 🖥️ **Windows Desktop App** - Native Windows application with easy installer
 
 ---
 
@@ -46,9 +51,7 @@ Download the latest version from the **Releases** page:
 
 | Version | Platform | Download |
 |---------|----------|----------|
-| Latest | Windows (64-bit) | [**⬇️ sabdakosh.exe**](https://github.com/adhikarisubodh9991/sabdakose/releases/latest) |
-
-> 💡 **Note**: This is a portable application - no installation required! Just download and run.
+| Latest | Windows (64-bit) | [**⬇️ Sabdakosh Installer**](https://github.com/adhikarisubodh9991/sabdakose/releases/latest) |
 
 ---
 
