@@ -14,7 +14,7 @@ class NepaliDictionary(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("नेपाली शब्दकोश")
-        self.setWindowIcon(QIcon("logo.png"))
+        self.setWindowIcon(QIcon("assets/logo.png"))
         self.setGeometry(100, 100, 700, 500)
         self.setMinimumSize(500, 350)
 

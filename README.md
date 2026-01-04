@@ -55,11 +55,11 @@ Download the latest version from the **Releases** page:
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/1.png" alt="Main Window" width="700"/>
+  <img src="assets/screenshots/1.png" alt="Main Window" width="700"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/2.png" alt="Search Results" width="700"/>
+  <img src="assets/screenshots/2.png" alt="Search Results" width="700"/>
 </p>
 
 ---
@@ -114,7 +114,7 @@ To create your own standalone executable:
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed --icon=icon.ico --add-data "sabdakosh.json;." sabdakose.py
+pyinstaller --onefile --windowed --icon=assets/icon.ico --add-data "sabdakosh.json;." --add-data "assets;assets" sabdakose.py
 ```
 
 ---
@@ -126,9 +126,12 @@ sabdakose/
 ├── sabdakose.py      # Main application code
 ├── sabdakosh.json    # Dictionary database
 ├── requirements.txt  # Python dependencies
-├── screenshots/      # Application screenshots
-│   ├── 1.png
-│   └── 2.png
+├── assets/           # Application assets
+│   ├── logo.png      # App logo
+│   ├── icon.ico      # Windows icon
+│   └── screenshots/  # Screenshots
+│       ├── 1.png
+│       └── 2.png
 ├── LICENSE           # MIT License
 └── README.md         # This file
 ```
