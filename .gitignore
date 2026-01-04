@@ -80,3 +80,10 @@ env/
 
 # Local development
 *.log
+
+# Executable / Installer (available in Releases)
+*.exe
+
+# Assets (keep locally for building)
+logo.png
+icon.ico

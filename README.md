@@ -1,7 +1,11 @@
 # शब्दकोश (Sabdakosh) - Nepali Dictionary
 
 <p align="center">
-  <img src="logo.png" alt="Sabdakosh Logo" width="120"/>
+  <img src="https://img.shields.io/badge/Python-3.8+-blue.svg" alt="Python"/>
+  <img src="https://img.shields.io/badge/PyQt6-Desktop-green.svg" alt="PyQt6"/>
+  <img src="https://img.shields.io/badge/Platform-Windows-lightgrey.svg" alt="Platform"/>
+  <img src="https://img.shields.io/github/v/release/adhikarisubodh9991/sabdakose?color=orange" alt="Release"/>
+  <img src="https://img.shields.io/github/license/adhikarisubodh9991/sabdakose" alt="License"/>
 </p>
 
 <p align="center">
@@ -9,12 +13,11 @@
 </p>
 
 <p align="center">
-  <a href="#features">Features</a> •
-  <a href="#download">Download</a> •
-  <a href="#installation">Installation</a> •
-  <a href="#usage">Usage</a> •
-  <a href="#screenshots">Screenshots</a> •
-  <a href="#contributing">Contributing</a>
+  <a href="#-features">Features</a> •
+  <a href="#-download">Download</a> •
+  <a href="#-screenshots">Screenshots</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-usage">Usage</a>
 </p>
 
 ---
@@ -25,21 +28,45 @@
 - 📖 **Comprehensive Definitions** - Get detailed meanings, grammar info, and etymology
 - 🎨 **Beautiful UI** - Clean and intuitive interface with native Nepali font support
 - ⚡ **Lightweight** - Fast startup and minimal resource usage
-- 🖥️ **Cross-platform** - Works on Windows, macOS, and Linux
+- 🖥️ **Standalone App** - No installation required, just download and run
+
+---
 
 ## 📥 Download
 
-### Windows Installer
+### Windows
 
-Download the latest version from the [**Releases**](../../releases/latest) page:
+Download the latest version from the **Releases** page:
 
-| Platform | Download |
-|----------|----------|
-| Windows (64-bit) | [**Sabdakosh.exe**](../../releases/latest/download/sabdakosh.exe) |
+<p align="center">
+  <a href="https://github.com/adhikarisubodh9991/sabdakose/releases/latest">
+    <img src="https://img.shields.io/badge/Download-Windows%20Installer-blue?style=for-the-badge&logo=windows" alt="Download"/>
+  </a>
+</p>
 
-> 💡 **Note**: The Windows executable is a standalone application - no installation required! Just download and run.
+| Version | Platform | Download |
+|---------|----------|----------|
+| Latest | Windows (64-bit) | [**⬇️ sabdakosh.exe**](https://github.com/adhikarisubodh9991/sabdakose/releases/latest) |
+
+> 💡 **Note**: This is a portable application - no installation required! Just download and run.
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="screenshots/1.png" alt="Main Window" width="700"/>
+</p>
+
+<p align="center">
+  <img src="screenshots/2.png" alt="Search Results" width="700"/>
+</p>
+
+---
 
 ## 🛠️ Installation (From Source)
+
+If you want to run from source code:
 
 ### Prerequisites
 
@@ -50,8 +77,8 @@ Download the latest version from the [**Releases**](../../releases/latest) page:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/sabdakosh.git
-   cd sabdakosh
+   git clone https://github.com/adhikarisubodh9991/sabdakose.git
+   cd sabdakose
    ```
 
 2. **Install dependencies**
@@ -64,79 +91,68 @@ Download the latest version from the [**Releases**](../../releases/latest) page:
    python sabdakose.py
    ```
 
+---
+
 ## 📖 Usage
 
-1. Launch the application
-2. Type a Nepali word in the search box
-3. Press **Enter** or click **"खोज्नुहोस्"** (Search)
-4. View the word's definition, grammar, and etymology
+1. **Launch** the application
+2. **Type** a Nepali word in the search box
+3. **Press** Enter or click **"खोज्नुहोस्"** (Search)
+4. **View** the word's definition, grammar, and etymology
 
-## 📸 Screenshots
+### Keyboard Shortcuts
 
-<p align="center">
-  <img src="screenshots/main.png" alt="Main Window" width="600"/>
-</p>
+| Key | Action |
+|-----|--------|
+| `Enter` | Search for word |
+
+---
 
 ## 🏗️ Building Executable
 
-To create a standalone executable:
+To create your own standalone executable:
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed --icon=icon.ico --add-data "sabdakosh.json;." --add-data "logo.png;." sabdakose.py
+pyinstaller --onefile --windowed --icon=icon.ico --add-data "sabdakosh.json;." sabdakose.py
 ```
+
+---
 
 ## 📁 Project Structure
 
 ```
-sabdakosh/
+sabdakose/
 ├── sabdakose.py      # Main application code
 ├── sabdakosh.json    # Dictionary database
-├── logo.png          # Application logo
-├── icon.ico          # Windows icon
 ├── requirements.txt  # Python dependencies
+├── screenshots/      # Application screenshots
+│   ├── 1.png
+│   └── 2.png
+├── LICENSE           # MIT License
 └── README.md         # This file
 ```
 
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. **Fork** the repository
-2. **Create** a feature branch (`git checkout -b feature/AmazingFeature`)
-3. **Commit** your changes (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** to the branch (`git push origin feature/AmazingFeature`)
-5. **Open** a Pull Request
-
-### Adding Words to Dictionary
-
-You can contribute by adding new words to `sabdakosh.json`:
-
-```json
-{
-  "word": "नेपाल",
-  "definitions": [
-    {
-      "grammar": "नाम",
-      "etymology": "संस्कृत",
-      "senses": ["हिमालयको काखमा रहेको देश", "दक्षिण एशियाको एक देश"]
-    }
-  ]
-}
-```
+---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+---
+
 ## 👨‍💻 Author
 
-**Your Name**
+**Subodh Adhikari**
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- GitHub: [@adhikarisubodh9991](https://github.com/adhikarisubodh9991)
 
 ---
 
 <p align="center">
   Made with ❤️ for the Nepali language
+</p>
+
+<p align="center">
+  ⭐ Star this repo if you find it useful!
 </p>
